@@ -24,6 +24,8 @@ devoutrgl::rgldev(fov = 30, view_angle = -30)
 p
 df <- rgl.ids("all")
 writeOBJ("~/Dropbox/test_rgl.obj", separateObjects = FALSE)
+writeSTL("~/Dropbox/test_rgl.stl")
+writePLY("~/Dropbox/test_rgl.ply")
 invisible(dev.off())
 
 # https://blackthread.io/gltf-converter/ to convert to gltf
