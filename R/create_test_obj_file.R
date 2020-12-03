@@ -9,8 +9,9 @@ library(ggplot2)
 library(rgl)
 library(ggrgl)
 
+source("R/my_writeOBJ.R")
 
-p <- ggplot(iris, aes(
+p <- ggplot(iris[1:2,], aes(
   x = Sepal.Length, y = Sepal.Width, z = Petal.Length, Y, color = Species
 )) + 
   geom_sphere_3d(size = 4) +
@@ -22,9 +23,8 @@ p <- ggplot(iris, aes(
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 devoutrgl::rgldev(fov = 30, view_angle = -30)
 df <- rgl.ids("all")
-writeOBJ("~/Dropbox/test_rgl.obj")
-writeSTL("~/Dropbox/test_rgl.stl")
-writePLY("~/Dropbox/test_rgl.ply")
+p
+my_writeOBJ("~/Dropbox/test_rgl.obj", separateDatapoints = TRUE)
 invisible(dev.off())
 
 # https://blackthread.io/gltf-converter/ to convert to gltf
