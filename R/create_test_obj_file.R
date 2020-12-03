@@ -22,7 +22,8 @@ p <- ggplot(iris, aes(
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 devoutrgl::rgldev(fov = 30, view_angle = -30)
 p
-writeOBJ("~/Dropbox/test_rgl.obj")
+df <- rgl.ids("all")
+writeOBJ("~/Dropbox/test_rgl.obj", separateObjects = FALSE)
 invisible(dev.off())
 
 # https://blackthread.io/gltf-converter/ to convert to gltf
