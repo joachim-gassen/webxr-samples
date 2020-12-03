@@ -1,0 +1,131 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "sphere87"
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "Node_42",
+            "rotation" : [
+                0,
+                0,
+                0,
+                0
+            ],
+            "scale" : [
+                0.0020000000949949026,
+                0.0020000000949949026,
+                0.0020000000949949026
+            ],
+            "translation" : [
+                -0.5,
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material_0",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "metallicFactor" : 0.5,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_19",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 576000,
+            "max" : [
+                471.6351318359375,
+                3,
+                412.576171875
+            ],
+            "min" : [
+                52.275665283203125,
+                -104,
+                45.688804626464844
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 576000,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5125,
+            "count" : 576000,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 6912000,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6912000,
+            "byteOffset" : 6912000
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2304000,
+            "byteOffset" : 13824000
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 16128000,
+            "uri" : "test_rgl2.bin"
+        }
+    ]
+}
