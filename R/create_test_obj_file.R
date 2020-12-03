@@ -11,7 +11,7 @@ library(ggrgl)
 
 source("R/my_writeOBJ.R")
 
-p <- ggplot(iris[1:2,], aes(
+p <- ggplot(iris, aes(
   x = Sepal.Length, y = Sepal.Width, z = Petal.Length, Y, color = Species
 )) + 
   geom_sphere_3d(size = 4) +
