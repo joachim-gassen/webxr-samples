@@ -21,9 +21,8 @@ p <- ggplot(iris, aes(
 # Render Plot in 3d with {devoutrgl}
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 devoutrgl::rgldev(fov = 30, view_angle = -30)
-p
 df <- rgl.ids("all")
-writeOBJ("~/Dropbox/test_rgl.obj", separateObjects = FALSE)
+writeOBJ("~/Dropbox/test_rgl.obj")
 writeSTL("~/Dropbox/test_rgl.stl")
 writePLY("~/Dropbox/test_rgl.ply")
 invisible(dev.off())
